@@ -1,0 +1,20 @@
+
+#Hardware
+To run this, Need a Raspberry Pi >2
+Headphone(3.5mm Jack)
+Power Bank/Battery.
+Sunglass
+
+#Installed
+
+Raspberry pi OS
+Python3
+picamera[array] module 
+face_recognition API to encode & decode image array
+follow the link for API: https://gist.github.com/ageitgey/1ac8dbe8572f3f533df6269dab35df65
+
+dlib for dependency
+https://github.com/davisking/dlib
+
+Numpy
+espeak for text to speech 
