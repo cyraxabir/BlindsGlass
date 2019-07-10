@@ -15,9 +15,9 @@ known_person=[]
 known_image=[]
 known_face_encoding=[]
 
-# Load a sample pictures 
+# Load the sample pictures 
 print("Loading known face image(s)")
-#Loop to add images in target folder
+#Loop to add images from target folder
 for file in os.listdir("friends"):
     try:
         #Extracting person name from the image filename
@@ -35,7 +35,7 @@ while True:
     # Grab a single frame of video from the RPi camera as a numpy array
     camera.capture(output, format="rgb")
 
-    # Find all the faces and face encodings in the current frame of video
+    # Find all the faces and face encodings in the current frame 
     face_locations = face_recognition.face_locations(output)
     print("Found {} faces in image.".format(len(face_locations)))
     face_encodings = face_recognition.face_encodings(output, face_locations)
